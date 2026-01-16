@@ -42,7 +42,32 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-The API will be available at `http://localhost:8081`
+**Alternative ways to run the application:**
+
+```bash
+# Option 1: Run with Maven
+mvn spring-boot:run
+
+# Option 2: Run the compiled JAR file
+mvn clean package
+java -jar target/springboot-secure-auth-api-1.0.0.jar
+
+# Option 3: Run on a specific port (if 8081 is in use)
+mvn spring-boot:run -Dspring-boot.run.arguments="--server.port=8080"
+java -jar target/springboot-secure-auth-api-1.0.0.jar --server.port=8080
+
+# Option 4: Run with debug logging enabled
+mvn spring-boot:run -Dspring-boot.run.arguments="--debug"
+java -jar target/springboot-secure-auth-api-1.0.0.jar --debug
+
+# Option 5: Run in background (Linux/macOS)
+nohup java -jar target/springboot-secure-auth-api-1.0.0.jar &
+
+# Option 6: Run with custom JVM settings
+java -Xmx512m -Xms256m -jar target/springboot-secure-auth-api-1.0.0.jar
+```
+
+The API will be available at `http://localhost:8081` (or the port you specified)
 
 ### Quick Test
 
