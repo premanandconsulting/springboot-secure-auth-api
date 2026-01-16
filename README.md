@@ -2,6 +2,17 @@
 
 A production-ready Spring Boot application demonstrating secure JWT-based authentication with refresh token support, role-based access control, and best practices for REST API security.
 
+## Why This Project Exists
+
+This repository was created to demonstrate a clean, production-ready approach to JWT-based authentication using Spring Boot.
+
+It focuses on:
+- Real-world security concerns (token rotation, expiry, RBAC)
+- Maintainable architecture suitable for long-lived systems
+- Clear separation of concerns aligned with enterprise standards
+
+The project is intended as a **reference implementation** for teams or developers who want a solid foundation rather than a minimal demo.
+
 ## Features
 
 - ✅ JWT-based authentication with access and refresh tokens
@@ -15,6 +26,13 @@ A production-ready Spring Boot application demonstrating secure JWT-based authen
 - ✅ Comprehensive API documentation
 - ✅ Docker & Docker Compose support
 - ✅ Production-ready configuration
+
+## Typical Use Cases
+
+- Backend foundation for SaaS or internal platforms
+- Authentication service for microservices-based systems
+- Reference architecture for Spring Security + JWT
+- Starting point for enterprise or startup backends
 
 ## Quick Start
 
@@ -394,9 +412,12 @@ See [SETUP_AND_DEPLOYMENT.md - Docker Deployment](docs/SETUP_AND_DEPLOYMENT.md#d
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
+## Maintainer
 
-Premanand - Secure Authentication API
+Premanand
+
+This repository is maintained as a reference implementation for secure backend authentication patterns.
+
 
 ## Support
 
@@ -406,6 +427,10 @@ For issues, questions, or suggestions:
 2. Review documentation in `docs/` directory
 3. Check [ARCHITECTURE.md](docs/ARCHITECTURE.md) for code structure
 4. Open an issue on GitHub
+
+## Contact
+
+For discussions, improvements, or enterprise usage questions, you may open an issue or reach out via the contact information available on this GitHub profile.
 
 ---
 
